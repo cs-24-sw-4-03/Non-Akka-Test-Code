@@ -1,11 +1,20 @@
+import java.math.BigInteger;
+
 public class SmartFibonacci {
 
+    //Highest Fibonacci number a long can hold is 92
     static long[] longArray;
     public static void main(String[] args) {
         longArray = new long[101];
         longArray[0] = 0;
         longArray[1] = 1;
-        System.out.println(fibonacci(100));
+
+        long startTime = System.nanoTime();
+        long result = fibonacci(92);
+        long endTime = System.nanoTime();
+
+        System.out.println(result);
+        System.out.println("Time: " + (endTime - startTime) + "ns");
     }
 
     private static long fibonacci(int n) {
