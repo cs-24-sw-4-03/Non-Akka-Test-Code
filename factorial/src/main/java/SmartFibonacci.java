@@ -1,6 +1,4 @@
-import java.lang.reflect.Array;
-
-public class smartFibonacci{
+public class SmartFibonacci {
 
     static long[] longArray;
     public static void main(String[] args) {

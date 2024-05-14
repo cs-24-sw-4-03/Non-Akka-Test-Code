@@ -1,4 +1,4 @@
-public class standardFibonacci {
+public class StandardFibonacci {
 
     public static void main(String[] args) {
         System.out.println(fibonacci(50));
